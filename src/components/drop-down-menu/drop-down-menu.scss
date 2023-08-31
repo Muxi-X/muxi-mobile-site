@@ -1,0 +1,34 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/colors.scss";
+// .triangle {
+//   @include relativeSize(5, 52);
+//   background-color: white;
+//   background-clip: content-box;
+//   padding: 3 / 1230 * 100vh 0;
+//   border-top: 5 / 1230 * 100vh solid white; //上边框
+//   border-bottom: 5 / 1230 * 100vh solid white; //下边框
+// }
+
+.drop-down-menu-container {
+  position: fixed;
+  @include relativeSize(450, 720);
+  z-index: 9;
+  .drop-down-menu-ul {
+    background-color: rgb(32, 53, 60);
+    @include relativeSize(450, 720);
+    list-style: none;
+    @include relativePosition(fixed, 0, 100);
+    //  margin-top: 100 / 1230*100vh;
+    @include relativeFontSize(34);
+  }
+  .drop-down-menu-li {
+    padding: 4vh 0 0 5vw;
+    color: rgb(245, 251, 220);
+  }
+  a {
+    text-decoration: none;
+  }
+  .clicked {
+    color: rgb(233, 180, 17);
+  }
+}

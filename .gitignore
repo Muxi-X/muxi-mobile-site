@@ -1,0 +1,11 @@
+*.log
+.cache
+.DS_Store
+.idea
+server/node_modules
+dist
+node_modules
+.gitkeep
+qiniu-upload.config.js
+static/
+package-lock.json

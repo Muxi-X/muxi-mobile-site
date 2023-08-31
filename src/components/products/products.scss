@@ -1,0 +1,64 @@
+// .test{
+//     height: 100vh;
+// }
+@import "../../styles/mixins.scss";
+@import "../../styles/colors.scss";
+.products-innercontainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-img-containner {
+  // flex:588;
+  margin-top: 113 / 1280 * 100vh;
+}
+.product-img {
+  @include relativeSize(596, 618);
+  height: auto;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: contain;
+  // background-image: url("http://test-sdk.muxixyz.com/mobile_site/mobile_site/product-xiazi.png");
+}
+.product-center-intro {
+  // flex:150;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-name {
+  margin-top: 26 / 1230 * 100vh;
+  @include relativeFontSize(47);
+  font-weight: 800;
+  color: rgb(245, 251, 220);
+}
+
+.product-type-containner {
+  margin-top: 20 / 1280 * 100vh;
+  margin-bottom: 20 / 1280 * 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.product-type-logo {
+  // flex:1
+  @include relativeSize(30, 30);
+  margin-right: 20 / 750 * 100vw;
+  height: auto;
+}
+.product-type {
+  // flex: 6;
+  color: $txt-yellow-color;
+  @include relativeFontSize(15);
+}
+.product-intro {
+  margin-top: 10 / 1230 * 100vh;
+  color: rgb(245, 251, 220);
+  width: 481 / 750 * 100vw;
+  @include relativeFontSize(24);
+  line-height: 150%;
+}

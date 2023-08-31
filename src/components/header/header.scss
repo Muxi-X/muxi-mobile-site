@@ -1,0 +1,88 @@
+@import "../../styles/mixins.scss";
+.header-container {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  background-color: rgb(32, 53, 60);
+  @include relativeSize(100, 720);
+  @include relativeFontSize(35);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  // line-height: 100 / 1230 * 100vh;
+  .header-logo {
+    flex: 1;
+  }
+  .header-title {
+    flex: 1;
+  }
+  .header-menu {
+    flex: 1;
+  }
+}
+
+.triangle {
+  height: 15px;
+  width: 52 / 720 * 100vw;
+  padding: 3px 0;
+  border-top: 3px solid rgb(253, 255, 220);
+  border-bottom: 3px solid rgb(253, 255, 220);
+
+  // @include relativeSize(25, 52);
+  margin: 0 auto;
+  background-color: rgb(253, 255, 220);
+  // padding: 5 / 1230 * 100vh 0;
+  // border-top: 5 / 1230 * 100vh solid rgb(253, 255, 220);
+  // border-bottom: 5 / 1230 * 100vh solid rgb(253, 255, 220);
+  background-clip: content-box;
+  -moz-background-clip: content-box;
+  -webkit-background-clip: content-box;
+  -o-background-clip: content-box;
+
+  // height: 5px;
+  // width: 53px;
+  // background-color:blue;
+  // display: inline-block;
+  // margin: 0 auto;
+  //  background-clip: content-box;
+  //  padding: 3px 0;
+  //  border-top: 5px solid blue;
+  // border-bottom: 5px solid blue;
+}
+// .viewport{
+//     position: relative;
+//     top: 0;
+//     width: 100%;
+//     height: 100vh;
+// }
+// .pageview{
+//     height: 100%;
+//     width: 100%;
+// }
+
+// @import '../../styles/base.scss';
+// @import '../../styles/color.scss';
+// .header-containner{
+//     text-align: center;
+//     display: flex;
+//     width: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     background-color: $nav;
+//     height:100px;
+// }
+// .header-logo{
+//     background-color: aqua;
+//     flex: 1;
+// }
+// .header-title{
+//     background: yellow;
+//     flex: 4;
+// }
+// .header-triangle{
+//     background-color: tomato;
+//     flex: 1;
+// }
